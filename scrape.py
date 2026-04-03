@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 
 DB_USER = "postgres"
 DB_PASSWORD = os.environ.get("DB_PASSWORD") 
-DB_HOST = "db.hpjsjnyuojemrayhjuem.supabase.co"
+DB_HOST = "hpjsjnyuojemrayhjuem.supabase.co"
 DB_PORT = "5432"
 DB_NAME = "postgres"
 
