@@ -6,9 +6,8 @@ import time
 import os
 from sqlalchemy import create_engine
 
-DB_USER = "postgres"
+DB_USER = "postgres.hpjsjnyuojemrayhjuem"
 DB_PASSWORD = os.environ.get("DB_PASSWORD") 
-
 DB_HOST = "aws-0-eu-west-1.pooler.supabase.com" 
 DB_PORT = "6543" 
 DB_NAME = "postgres"
