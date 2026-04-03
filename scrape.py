@@ -8,8 +8,9 @@ from sqlalchemy import create_engine
 
 DB_USER = "postgres"
 DB_PASSWORD = os.environ.get("DB_PASSWORD") 
-DB_HOST = "hpjsjnyuojemrayhjuem.supabase.co"
-DB_PORT = "5432"
+
+DB_HOST = "aws-0-eu-west-1.pooler.supabase.com" 
+DB_PORT = "6543" 
 DB_NAME = "postgres"
 
 db_url = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?sslmode=require"
@@ -24,7 +25,6 @@ categories = {
 
 headers = {"User-Agent": "Mozilla/5.0"}
 all_rows = []
-
 
 for cat_name, base_url in categories.items():
     for page in range(2):
